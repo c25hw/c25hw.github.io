@@ -1,38 +1,151 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Room of Mysteries</title>
 
-		<title> Room of Mysteries</title>
+	<style type="text/css">
 
-		<style type="text/css">
+		.painting{
+			height: 150px;
+			width:150px;
+			/*position:relative;*/
+			display:inline-block;
+			background-size: contain;
+			background-repeat: no-repeat;
+			transition: 1s;
+			position: relative;
+			z-index: 3;
 
-			body{
-				margin:0px;
-			}
-
-		#room{
-			width: 1500px;
-			height: 830px;
-			background-position: center;
-			background-size:cover;
-			background-repeat:no-repeat;
-			background-image: url(roomCurtain.png);
-			background-color:blue;
-				
 		}
+		#seven{
+			height: 200px;
+			width:200px;
+			background-image: url(pictureframe7.png);
+		}
+		#three{
+			height: 200px;
+			width:200px;
+			background-image: url(pictureframe3.png);
+			/*background-size: cover;*/
+		}
+		#eleven{
+			height: 200px;
+			width:200px;
+			background-image: url(pictureframe11.png);
+			/*background-size: cover;*/
+		}
+		#two{
+			height: 200px;
+			width:200px;
+			background-image: url(pictureframe2.png);
+			/*background-size: cover;*/
+		}
+		#nine{
+			height: 200px;
+			width:200px;
+			background-image: url(pictureframe9.png);
+		}
+		#five{
+			height: 200px;
+			width:200px;
+			background-image: url(pictureframe5.png);
+			/*background-size: cover;*/
+		}
+		#one{
+			height: 200px;
+			width:200px;
+			background-image: url(pictureframe1.png);
+			/*background-size: cover;*/
+		}
+		#thirteen{
+			height: 200px;
+			width:200px;
+			background-image: url(pictureframe13.png);
+			/*background-size: cover;*/
+		}
+		#sixteen{
+			height: 200px;
+			width:200px;
+			background-image: url(pictureframe16.png);
+		}
+		#twenty{
+			height: 200px;
+			width:200px;
+			background-image: url(pictureframe20.png);
+			/*background-size: cover;*/
+		}
+		#four{
+			height: 200px;
+			width:200px;
+			background-image: url(pictureframe4.png);
+			/*background-size: cover;*/
+		}
+		#eight{
+			height: 200px;
+			width:200px;
+			background-image: url(pictureframe8.png);
+			/*background-size: cover;*/
+		}
+		#twelve{
+			height: 200px;
+			width:200px;
+			background-image: url(pictureframe12.png);
+		}
+		#ten{
+			height: 200px;
+			width:200px;
+			background-image: url(pictureframe10.png);
+			/*background-size: cover;*/
+		}
+		#fifteen{
+			height: 200px;
+			width:200px;
+			background-image: url(pictureframe15.png);
+			/*background-size: cover;*/
+		}
+		#fourteen{
+			height: 200px;
+			width:200px;
+			background-image: url(pictureframe14.png);
+			/*background-size: cover;*/
+		}
+		#eighteen{
+			height: 200px;
+			width:200px;
+			background-image: url(pictureframe18.png);
+		}
+		#seventeen{
+			height: 200px;
+			width:200px;
+			background-image: url(pictureframe17.png);
+			/*background-size: cover;*/
+		}
+		#nineteen{
+			height: 200px;
+			width:200px;
+			background-image: url(pictureframe19.png);
+			/*background-size: cover;*/
+		}
+		#six{
+			height: 200px;
+			width:200px;
+			background-image: url(pictureframe6.png);
+			/*background-size: cover;*/
+		
 
-/*	#curtain{
-		position:absolute;
-		top:0px;
-			width: 1200px;
-			height: 1000px;
-			background-repeat:no-repeat;
-			
-						background-color:red;
-			background-image: url(
-				https://i.pinimg.com/originals/b7/5e/82/b75e824e0cfe2c75f237ce38beb04210.png);
-				
-		}*/
+		}
+		
+		#wallpaper{
+
+			height: 900px;
+			width: 1500px;
+			top: -1000px;
+			background-image: url(wallpaper.jpeg);
+			position:absolute;
+			background-size: cover;
+			z-index: -1; 
+			top:0px;
+		}
 
 		.square{
 			
@@ -44,65 +157,294 @@
 		}
 
 		#painting1{
-			width:150px;
+			width:300px;
 			height: 300px;
+			top: 100px;
+			left:1000px;
 		}
 
 		#painting2{
-			width:150px;
+			width:300px;
 			height: 300px;
-			left:100px;
+			left:500px;
+			top:100px;
 		}
 
 		#painting3{
-			width:150px;
+			width:300px;
 			height: 300px;
 			left:100px;
-			top:70px;
+			top:100px;
 		}
 
 		
-
+		body{
+			margin: 0px;
+		}
+		
 	</style>
-
 </head>
-
 <body>
 
-<a href="journal.html">
-	<div class="square" id="painting1"></div>
-		</a>
-<a href="Attempt.html">
-	<div class="square" id=painting2></div>
+	<a href="journal.html">
+			<div class="painting" id="twelve"></div>
 </a>
+
+<a href="Attempt.html">
+	<div class="painting" id="three"></div>
+</a>
+
+	<div class="painting" id="two"></div>
+	<div class="painting" id="eleven"></div>
+	<div class="painting" id="eight"></div>
+	<div class="painting" id="one"></div>
+	<div class="painting" id="sixteen"></div>
+	<div class="painting" id="four"></div>
+	<div class="painting" id="five"></div>
+	<div class="painting" id="twenty"></div>
+	<div class="painting" id="thirteen"></div>
+	<div class="painting" id="nine"></div>
+	<div class="painting" id="six"></div>
+	<div class="painting" id="ten"></div>
+	<div class="painting" id="nineteen"></div>
+	<div class="painting" id="fourteen"></div>
+	<div class="painting" id="eighteen"></div>
+	<div class="painting" id="seventeen"></div>
+	<div class="painting" id="fifteen"></div>
+	<div class="painting" id="seven"></div>
+
+	<div id="wallpaper"></div>
+
+	
+
+
 <a href="uh.html">
 	<div class="square" id=painting3></div>
 </a>
 
 	<div id="room"></div>
 
- <script type="text/javascript">
- 	
- 	document.addEventListener()
+	<script type="text/javascript">
 
- </script>
+	var one = document.getElementById("one");
+
+	one.addEventListener('mouseover',function (){
+	var angle = Math.floor(Math.random()*100)
+
+	one.style.transform ="rotate("+ angle + "deg)"
+
+	console.log(angle) 
+
+	} )
+
+	var two = document.getElementById("two");
+
+	two.addEventListener('mouseover',function (){
+	var angle = Math.floor(Math.random()*250)
+
+	two.style.transform ="rotate("+ angle + "deg)"
+
+	console.log(angle) 
+
+	} )
+
+	var three = document.getElementById("three");
+
+	three.addEventListener('mouseover',function (){
+	var angle = Math.floor(Math.random()*110)
+
+	three.style.transform ="rotate("+ angle + "deg)"
+
+	console.log(angle) 
+
+	} )
+
+	var four = document.getElementById("four");
+
+	four.addEventListener('mouseover',function (){
+	var angle = Math.floor(Math.random()*70)
+
+	four.style.transform ="rotate("+ angle + "deg)"
+
+	console.log(angle) 
+
+	} )
+	var five = document.getElementById("five");
+
+	five.addEventListener('mouseover',function (){
+	var angle = Math.floor(Math.random()*238)
+
+	five.style.transform ="rotate("+ angle + "deg)"
+
+	console.log(angle) 
+
+	} )
+
+	var six = document.getElementById("six");
+
+	six.addEventListener('mouseover',function (){
+	var angle = Math.floor(Math.random()*753)
+
+	six.style.transform ="rotate("+ angle + "deg)"
+
+	console.log(angle) 
+
+	} )
+
+	var seven = document.getElementById("seven");
+
+	seven.addEventListener('mouseover',function (){
+	var angle = Math.floor(Math.random()*655)
+
+	seven.style.transform ="rotate("+ angle + "deg)"
+
+	console.log(angle) 
+
+	} )
+
+	var eight = document.getElementById("eight");
+
+	eight.addEventListener('mouseover',function (){
+	var angle = Math.floor(Math.random()*493)
+
+	eight.style.transform ="rotate("+ angle + "deg)"
+
+	console.log(angle) 
+
+	} )
+	var nine = document.getElementById("nine");
+
+	nine.addEventListener('mouseover',function (){
+	var angle = Math.floor(Math.random()*654)
+
+	nine.style.transform ="rotate("+ angle + "deg)"
+
+	console.log(angle) 
+
+	} )
+
+	var ten = document.getElementById("ten");
+
+	ten.addEventListener('mouseover',function (){
+	var angle = Math.floor(Math.random()*178)
+
+	ten.style.transform ="rotate("+ angle + "deg)"
+
+	console.log(angle) 
+
+	} )
+
+	var eleven = document.getElementById("eleven");
+
+	eleven.addEventListener('mouseover',function (){
+	var angle = Math.floor(Math.random()*371)
+
+	eleven.style.transform ="rotate("+ angle + "deg)"
+
+	console.log(angle) 
+
+	} )
+
+	var twelve = document.getElementById("twelve");
+
+	twelve.addEventListener('mouseover',function (){
+	var angle = Math.floor(Math.random()*144)
+
+	twelve.style.transform ="rotate("+ angle + "deg)"
+
+	console.log(angle) 
+
+	} )
+	var thirteen = document.getElementById("thirteen");
+
+	thirteen.addEventListener('mouseover',function (){
+	var angle = Math.floor(Math.random()*64)
+
+	thirteen.style.transform ="rotate("+ angle + "deg)"
+
+	console.log(angle) 
+
+	} )
+
+	var fourteen = document.getElementById("fourteen");
+
+	fourteen.addEventListener('mouseover',function (){
+	var angle = Math.floor(Math.random()*666)
+
+	fourteen.style.transform ="rotate("+ angle + "deg)"
+
+	console.log(angle) 
+
+	} )
+
+	var fifteen = document.getElementById("fifteen");
+
+	fifteen.addEventListener('mouseover',function (){
+	var angle = Math.floor(Math.random()*54)
+
+	fifteen.style.transform ="rotate("+ angle + "deg)"
+
+	console.log(angle) 
+
+	} )
+
+	var sixteen = document.getElementById("sixteen");
+
+	sixteen.addEventListener('mouseover',function (){
+	var angle = Math.floor(Math.random()*927)
+
+	sixteen.style.transform ="rotate("+ angle + "deg)"
+
+	console.log(angle) 
+
+	} )
+	var seventeen = document.getElementById("seventeen");
+
+	seventeen.addEventListener('mouseover',function (){
+	var angle = Math.floor(Math.random()*330)
+
+	seventeen.style.transform ="rotate("+ angle + "deg)"
+
+	console.log(angle) 
+
+	} )
+
+	var eighteen = document.getElementById("eighteen");
+
+	eighteen.addEventListener('mouseover',function (){
+	var angle = Math.floor(Math.random()*192)
+
+	eighteen.style.transform ="rotate("+ angle + "deg)"
+
+	console.log(angle) 
+
+	} )
+
+	var nineteen = document.getElementById("nineteen");
+
+	nineteen.addEventListener('mouseover',function (){
+	var angle = Math.floor(Math.random()*624)
+
+	nineteen.style.transform ="rotate("+ angle + "deg)"
+
+	console.log(angle) 
+
+	} )
+
+	var twenty = document.getElementById("twenty");
+
+	twenty.addEventListener('mouseover',function (){
+	var angle = Math.floor(Math.random()*22)
+
+	twenty.style.transform ="rotate("+ angle + "deg)"
+
+	console.log(angle) 
+
+	} )
 
 
 
-
-	<!-- <div id="curtain"></div>
- -->
-
-<!-- <div id="menu">
-	
-		journalllllll
-
-</div> -->
-
-
-
+</script>
 
 </body>
-
-
 </html>
