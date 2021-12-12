@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>food</title>
+
+	<style type="text/css">
+
+		#plate{
+			height: 900px;
+			width: 1000px;
+			background-image: url(plate.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			z-index: 1;
+
+		}
+
+		#random{
+			width: 200px;
+			height: 200px;
+			left: 350px;
+			top:300px;
+			background-image:url(bun.png);
+			background-size: contain;
+			position: absolute;
+			animation-name: move;
+			animation-duration: 20s;
+			position: absolute;
+			animation: frame;
+			animation-duration: 20s;
+			z-index: 1;
+		}
+
+		@keyframes frame{
+			0%{
+				 left: 800px
+			}
+			10%{
+				 transform: rotate(4586deg);
+				 left:194px;
+			}
+			46%{
+				 transform: rotate(28deg);
+				 left:-1402px;
+				 top: 20px;
+			}
+			80%{
+				 transform: rotate(393deg);
+				 left:395px;
+				 top: 204px;
+			}
+			100%{
+				 transform: rotate(284deg);
+				 left:-548px;
+				 top: -193;
+			}
+
+
+		}
+
+		body{
+			margin: 0px;
+		}
+
+		#table{
+			height: 1000px;
+			width: 1000px;
+			background-image: url(table.jpg);
+			background-size: contain;
+			background-repeat: no-repeat;
+			z-index: -1;
+			position: absolute;
+
+		}
+
+	</style>
+
+</head>
+<body>
+
+		<div class=frame id=random></div>
+		<div id=plate></div>
+		<div id=table></div>
+
+		<script type="text/javascript">
+			
+			var two = document.getElementById("random");
+
+	two.addEventListener('click',function (){
+	var angle = Math.floor(Math.random()*250)
+
+	two.style.transform ="rotate("+ angle + "deg)"
+
+	console.log(angle)})
+	
+
+
+
+		</script>
+
+</body>
+</html>

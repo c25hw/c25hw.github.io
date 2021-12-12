@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hello</title>
+
+	<style type="text/css">
+		#random{
+			width: 200px;
+			height: 200px;
+			background-image: url(bun.png);
+			background-size: cover;
+		}
+
+	</style>
+
+</head>
+<body>
+
+		<div id=random></div>
+
+		<script type="text/javascript">
+			
+			var two = document.getElementById("random");
+
+	two.addEventListener('mouseover',function (){
+	var angle = Math.floor(Math.random()*250)
+
+	two.style.transform ="rotate("+ angle + "deg)"
+
+	console.log(angle) }
+
+	two.addEventListener('click',function (){
+		console.log(counter);
+			var two=document.createElement("div")
+			background.appendChild(two)
+	}
+
+
+
+		</script>
+
+</body>
+</html>
