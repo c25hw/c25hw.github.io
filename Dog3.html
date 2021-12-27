@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MUSHROOM FOREST</title>
+
+	<style type="text/css">
+		
+		#forest{
+			position: relative;
+			height: 840px;
+			width: 4640px;
+			background-image: url(shrooms.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			z-index: -1;
+
+		}
+
+		#walking{
+			position: relative;
+			height: 200px;
+			width: 120px;
+			background-image: url(Human.gif);
+			top:-395px;
+			left: 240px;
+			background-size: cover;
+			/*background-color: blue;*/
+			z-index: 1;
+		}
+
+		#dogwalking{
+			position: relative;
+			height: 150px;
+			width: 200px;
+			background-image: url(Dogwalking.gif);
+			top:-530px;
+			left: 100px;
+			background-size: cover;
+		/*	background-color: blue;*/
+			z-index: 1;
+		}
+
+		body{
+			margin: 0px;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div id="forest"></div>
+	<div id="walking"></div>
+	<div id="dogwalking"></div>
+
+	<script type="text/javascript">
+			
+		var stick = document.getElementById("walking")
+		var dog =document.getElementById("dogwalking")
+
+		var left = 240;
+
+		var left1 = 100;
+
+		function anim(e){
+
+			 if(e.keyCode==76){
+
+			 	left+=10;
+
+			 	stick.style.left = left + 'px'
+
+			 	left+=10;
+			 	dog.style.left = left + 'px'
+			 	;
+			 }
+
+			 if(e.keyCode==82){
+
+			 	left -=10;
+
+			 	stick.style.left = left + 'px'
+			 	dog.style.left1 = left + 'px'
+			 	;
+			 }
+
+			 if(e.keyCode==38){
+			 }
+
+			 if(e.keyCode==40){
+			 }
+
+		}
+
+		document.onkeydown=anim;
+
+		</script>
+
+
+	
+
+</body>
+</html>

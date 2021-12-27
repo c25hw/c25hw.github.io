@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+
+	<style type="text/css">
+		
+		#tower{
+			height: 1500px;
+			width: 1000px;
+			background-image: url(tower.png);
+
+		}
+
+	</style>
+</head>
+<body>
+
+	<div id="tower"></div>
+
+	<script type="text/javascript">
+
+		function idk(){
+
+		var tower = document.getElementById("tower");
+
+		tower.addEventListener('mouseover',function (){
+		
+		var number=Math.floor(Math.random()*3)
+		console.log(number)
+
+		if (number==0) {
+
+			alert ("Congratulations! You obtained a PAINTING OF CAT LORD and a BILLIARD BALL. Click OK to continue on your journey."); 
+
+               var link = document.createElement('a');
+            link.href="Dog2.html";
+            link.innerText = "Obtain Items";
+            document.body.appendChild(link);
+ 
+		}
+
+		if (number!==0){
+
+			alert ("Congratulations! You obtained a PAINTING OF CAT LORD and a BILLIARD BALL. Click OK to continue on your journey."); 
+
+               var link = document.createElement('a');
+            link.href="Dog2.html";
+            link.innerText = "Obtain Items";
+            document.body.appendChild(link);
+ 
+		}
+
+
+
+	idk()})
+
+
+	</script>
+
+</body>
+</html>
