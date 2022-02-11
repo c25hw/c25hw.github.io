@@ -6,10 +6,15 @@
 	<style type="text/css">
 		
 		#tower{
-			height: 1500px;
-			width: 1000px;
+			height: 2000px;
+			width: 1460px;
 			background-image: url(tower.png);
+			background-size: cover;
+			z-index: -1;
+		}
 
+		body{
+			margin: 0px;
 		}
 
 	</style>
@@ -20,7 +25,6 @@
 
 	<script type="text/javascript">
 
-		// function idk(){
 
 		var tower = document.getElementById("tower");
 
@@ -34,26 +38,24 @@
 			alert ("Congratulations! You obtained a KEY. Click OK to continue on your journey."); 
 
                var link = document.createElement('a');
-            link.href="DouCastle.html";
+            link.href="Duocastle.html";
             link.innerText = "Obtain Items";
-            document.body.appendChild(link);
+            tower.appendChild(link);
  
 		}
 
-		if (number!==0){
+		else if (number!==0){
 
 			alert ("Congratulations! You obtained NOTHING. Click OK to continue on your journey."); 
 
                var link = document.createElement('a');
             link.href="Dog2.html";
-            link.innerText = "Obtain Items";
-            document.body.appendChild(link);
+            link.innerText = "Obtain Nothing";
+            tower.appendChild(link);
  
 		}
 
-
-
-	hum()})
+})
 
 
 	</script>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		#test{
+			height: 250px;
+			width:240px;
+			background-image: url(framo.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div id="test"></div>
+
+<audio id="carmina" src="carmina.mp3"></audio>
+
+<script type="text/javascript">
+		
+		var test = document.getElementById('test');
+
+		var carmina = document.getElementById('carmina');
+		var counter = 0
+
+		test.addEventListener('click',function (){ counter=counter +1
+
+
+			if (counter%2 !== 0) {
+
+			carmina.play()
+			console.log("played")}
+
+			else if (counter%2 == 0) {
+
+				carmina.pause();
+				console.log("pause")
+			}
+
+
+		// carmina.addEventListener('click',function (){
+
+		// 	if (counter%2 == 0) {
+
+		// 		carmina.pause();
+		// 		console.log("pause")
+		// 	}
+
+			// carmina.pause();
+			// console.log("pause")
+		})
+
+	</script>
+
+</body>
+</html>

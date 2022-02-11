@@ -12,7 +12,7 @@
 			display:inline-block;
 			background-size: contain;
 			background-repeat: no-repeat;
-			transition: 1s;
+			transition: 15s;
 			position: relative;
 			z-index: 3;
 
@@ -20,6 +20,7 @@
 		#seven{
 			height: 200px;
 			width:200px;
+			top: 40px;
 			background-image: url(pictureframe7.png);
 		}
 		#three{
@@ -41,9 +42,10 @@
 			/*background-size: cover;*/
 		}
 		#nine{
-			height: 200px;
-			width:200px;
-			background-image: url(pictureframe9.png);
+			height: 188px;
+			width:240px;
+			background-image: url(pictureball.png);
+			background-size: cover;
 		}
 		#five{
 			height: 200px;
@@ -52,7 +54,7 @@
 			/*background-size: cover;*/
 		}
 		#one{
-			height: 200px;
+			height: 230px;
 			width:200px;
 			background-image: url(pictureframe1.png);
 			/*background-size: cover;*/
@@ -131,10 +133,98 @@
 			width:200px;
 			background-image: url(pictureframe6.png);
 			/*background-size: cover;*/
-		
+		}
+		#bridge{
+			height: 220px;
+			width:220px;
+			background-image: url(framebridge.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: relative;
+			z-index: 3;
+			top: 10px;
+			transition: 13s;
 
 		}
+		#flower{
+			height: 220px;
+			width:220px;
+			left: 220px;
+			top: -200px;
+			background-image: url(frameflowers.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: relative;
+			z-index: 3;
+			transition: 13s;
+		}
+
+		#fan{
+			height: 220px;
+			width:220px;
+			left: 430px;
+			top: -420px;
+			background-image: url(freme.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: relative;
+			z-index: 3;
+			transition: 13s;
+		}
+
+		#music{
+			height: 220px;
+			width:220px;
+			left: 650px;
+			top: -650px;
+			background-image: url(framef.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: relative;
+			z-index: 3;
+			transition: 13s;
+		}
+
+		#fur{
+			height: 250px;
+			width:240px;
+			left: 850px;
+			top: -870px;
+			background-image: url(framee.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: relative;
+			z-index: 3;
+			transition: 13s;
+		}
+
+		#woman{
+			height: 540px;
+			width: 440px;
+			left:1080px;
+			top: 350px;
+			background-image: url(reading.png);
+			background-size: cover;
+			z-index: 3;
+			position: absolute;
+			transition: 13s;
+		}
 		
+
+		#moreflowers{
+			height: 250px;
+			width:240px;
+			left: 1270px;
+			top: -1560px;
+			background-image: url(framo.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: relative;
+			z-index: 3;
+			transition: 13s;
+		}
+		
+
 		#wallpaper{
 
 			height: 900px;
@@ -145,6 +235,7 @@
 			background-size: cover;
 			z-index: -1; 
 			top:0px;
+
 		}
 
 		.square{
@@ -186,9 +277,12 @@
 </head>
 <body>
 
+	<audio id="carmina" src="carmina.mp3"></audio>
+
 	<a href="journal.html">
 			<div class="painting" id="twelve"></div>
 </a>
+	<div class="painting" id="seven"></div>
 
 <a href="Attempt.html">
 	<div class="painting" id="three"></div>
@@ -208,7 +302,6 @@
 	<a href="uh.html">
 	<div class="painting" id="nine"></div>
 </a>
-	<div class="painting" id="nine"></div>
 	<div class="painting" id="six"></div>
 	<div class="painting" id="ten"></div>
 	<div class="painting" id="nineteen"></div>
@@ -218,10 +311,17 @@
 	<div class="painting" id="eighteen"></div>
 	<div class="painting" id="seventeen"></div>
 	<div class="painting" id="fifteen"></div>
-	<a href="https://docs.google.com/presentation/d/1WWB39p-K69ZOigbCODCCIadFyVxvI8PoTILJV6eveVs/edit?usp=sharing">
+	<!-- <a href="https://docs.google.com/presentation/d/1WWB39p-K69ZOigbCODCCIadFyVxvI8PoTILJV6eveVs/edit?usp=sharing">
 	<div class="painting" id="seven"></div>
-</a>
+</a> -->
+	<div id="bridge"></div>
+	<div id="flower"></div>
+	<div id="fan"></div>
+	<div id="music"></div>
+	<div id="fur"></div>
+	<div id="moreflowers"></div>
 	<div id="wallpaper"></div>
+	<div id="woman"></div>
 
 	
 
@@ -235,20 +335,31 @@
 	<script type="text/javascript">
 
 	var one = document.getElementById("one");
+	// var carmina = document.getElementById('carmina');
+
 
 	one.addEventListener('mouseover',function (){
 	var angle = Math.floor(Math.random()*100)
 
-	one.style.transform ="rotate("+ angle + "deg)"
+	one.style.transform ="rotate("+ angle + "deg)";
 
 	console.log(angle) 
 
+	// carmina.play();
+	// console.log("play?")
+
+	
+
 	} )
+
+	// one.addEventListener("mouseout", function(){
+	// 	carmina.pause(); 
+	// })
 
 	var two = document.getElementById("two");
 
 	two.addEventListener('mouseover',function (){
-	var angle = Math.floor(Math.random()*250)
+	var angle = Math.floor(Math.random()*100)
 
 	two.style.transform ="rotate("+ angle + "deg)"
 
@@ -280,7 +391,7 @@
 	var five = document.getElementById("five");
 
 	five.addEventListener('mouseover',function (){
-	var angle = Math.floor(Math.random()*238)
+	var angle = Math.floor(Math.random()*98)
 
 	five.style.transform ="rotate("+ angle + "deg)"
 
@@ -291,7 +402,7 @@
 	var six = document.getElementById("six");
 
 	six.addEventListener('mouseover',function (){
-	var angle = Math.floor(Math.random()*753)
+	var angle = Math.floor(Math.random()*75)
 
 	six.style.transform ="rotate("+ angle + "deg)"
 
@@ -302,7 +413,7 @@
 	var seven = document.getElementById("seven");
 
 	seven.addEventListener('mouseover',function (){
-	var angle = Math.floor(Math.random()*655)
+	var angle = Math.floor(Math.random()*65)
 
 	seven.style.transform ="rotate("+ angle + "deg)"
 
@@ -313,7 +424,7 @@
 	var eight = document.getElementById("eight");
 
 	eight.addEventListener('mouseover',function (){
-	var angle = Math.floor(Math.random()*493)
+	var angle = Math.floor(Math.random()*149)
 
 	eight.style.transform ="rotate("+ angle + "deg)"
 
@@ -323,7 +434,7 @@
 	var nine = document.getElementById("nine");
 
 	nine.addEventListener('mouseover',function (){
-	var angle = Math.floor(Math.random()*654)
+	var angle = Math.floor(Math.random()*99)
 
 	nine.style.transform ="rotate("+ angle + "deg)"
 
@@ -334,7 +445,7 @@
 	var ten = document.getElementById("ten");
 
 	ten.addEventListener('mouseover',function (){
-	var angle = Math.floor(Math.random()*178)
+	var angle = Math.floor(Math.random()*88)
 
 	ten.style.transform ="rotate("+ angle + "deg)"
 
@@ -345,7 +456,7 @@
 	var eleven = document.getElementById("eleven");
 
 	eleven.addEventListener('mouseover',function (){
-	var angle = Math.floor(Math.random()*371)
+	var angle = Math.floor(Math.random()*103)
 
 	eleven.style.transform ="rotate("+ angle + "deg)"
 
@@ -366,7 +477,7 @@
 	var thirteen = document.getElementById("thirteen");
 
 	thirteen.addEventListener('mouseover',function (){
-	var angle = Math.floor(Math.random()*64)
+	var angle = Math.floor(Math.random()*90)
 
 	thirteen.style.transform ="rotate("+ angle + "deg)"
 
@@ -377,7 +488,7 @@
 	var fourteen = document.getElementById("fourteen");
 
 	fourteen.addEventListener('mouseover',function (){
-	var angle = Math.floor(Math.random()*666)
+	var angle = Math.floor(Math.random()*66)
 
 	fourteen.style.transform ="rotate("+ angle + "deg)"
 
@@ -388,7 +499,7 @@
 	var fifteen = document.getElementById("fifteen");
 
 	fifteen.addEventListener('mouseover',function (){
-	var angle = Math.floor(Math.random()*54)
+	var angle = Math.floor(Math.random()*154)
 
 	fifteen.style.transform ="rotate("+ angle + "deg)"
 
@@ -399,7 +510,7 @@
 	var sixteen = document.getElementById("sixteen");
 
 	sixteen.addEventListener('mouseover',function (){
-	var angle = Math.floor(Math.random()*927)
+	var angle = Math.floor(Math.random()*92)
 
 	sixteen.style.transform ="rotate("+ angle + "deg)"
 
@@ -409,7 +520,7 @@
 	var seventeen = document.getElementById("seventeen");
 
 	seventeen.addEventListener('mouseover',function (){
-	var angle = Math.floor(Math.random()*330)
+	var angle = Math.floor(Math.random()*133)
 
 	seventeen.style.transform ="rotate("+ angle + "deg)"
 
@@ -420,7 +531,7 @@
 	var eighteen = document.getElementById("eighteen");
 
 	eighteen.addEventListener('mouseover',function (){
-	var angle = Math.floor(Math.random()*192)
+	var angle = Math.floor(Math.random()*122)
 
 	eighteen.style.transform ="rotate("+ angle + "deg)"
 
@@ -431,7 +542,7 @@
 	var nineteen = document.getElementById("nineteen");
 
 	nineteen.addEventListener('mouseover',function (){
-	var angle = Math.floor(Math.random()*624)
+	var angle = Math.floor(Math.random()*102)
 
 	nineteen.style.transform ="rotate("+ angle + "deg)"
 
@@ -442,7 +553,7 @@
 	var twenty = document.getElementById("twenty");
 
 	twenty.addEventListener('mouseover',function (){
-	var angle = Math.floor(Math.random()*22)
+	var angle = Math.floor(Math.random()*122)
 
 	twenty.style.transform ="rotate("+ angle + "deg)"
 
@@ -450,6 +561,70 @@
 
 	} )
 
+	var bridge = document.getElementById("bridge");
+
+	bridge.addEventListener('mouseover',function (){
+	var angle = Math.floor(Math.random()*166)
+
+	bridge.style.transform ="rotate("+ angle + "deg)"
+
+	console.log(angle) 
+
+	} )
+
+	var flower = document.getElementById("flower");
+
+	flower.addEventListener('mouseover',function (){
+	var angle = Math.floor(Math.random()*154)
+
+	flower.style.transform ="rotate("+ angle + "deg)"
+
+	console.log(angle) 
+
+	} )
+
+	var fan = document.getElementById("fan");
+
+	fan.addEventListener('mouseover',function (){
+	var angle = Math.floor(Math.random()*192)
+
+	fan.style.transform ="rotate("+ angle + "deg)"
+
+	console.log(angle) 
+
+	} )
+	var music = document.getElementById("music");
+
+	music.addEventListener('mouseover',function (){
+	var angle = Math.floor(Math.random()*79)
+
+	music.style.transform ="rotate("+ angle + "deg)"
+
+	console.log(angle) 
+
+	} )
+
+	var fur = document.getElementById("fur");
+
+	fur.addEventListener('mouseover',function (){
+	var angle = Math.floor(Math.random()*92)
+
+	fur.style.transform ="rotate("+ angle + "deg)"
+
+	console.log(angle) 
+
+	} )
+
+	var moreflowers = document.getElementById("moreflowers");
+
+	moreflowers.addEventListener('mouseover',function (){
+	var angle = Math.floor(Math.random()*107)
+
+	moreflowers.style.transform ="rotate("+ angle + "deg)"
+
+	console.log(angle) 
+
+	} )
 
 
 </script>
