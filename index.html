@@ -277,7 +277,27 @@
 </head>
 <body>
 
-	<audio id="carmina" src="carmina.mp3"></audio>
+	<audio id="shosta" src="shosta.mp3"></audio>
+	<audio id="waltz" src="waltz.mp3"></audio>
+	<audio id="cindy" src="cindy.mp3"></audio>
+	<audio id="andante" src="andante.mp3"></audio>
+	<audio id="overture" src="overture.mp3"></audio>
+	<audio id="dwm" src="dancewithme.mp3"></audio>
+	<audio id="masq" src="masq.mp3"></audio>
+	<audio id="hubay" src="hubay.mp3"></audio>
+	<audio id="bruch" src="bruch.mp3"></audio>
+	<audio id="wien" src="wien.mp3"></audio>
+	<audio id="lark" src="lark.mp3"></audio>
+	<audio id="polo" src="polo.mp3"></audio>
+	<audio id="intoandrondo" src="intorondo.mp3"></audio>
+	<audio id="panini5" src="panini5.mp3"></audio>
+	<audio id="chaconne" src="chaconne.mp3"></audio>
+	<audio id="ysaye" src="ysaye.mp3"></audio>
+	<audio id="elf" src="elf.mp3"></audio>
+	<audio id="butterfly" src="butterfly.mp3"></audio>
+	<audio id="pagan" src="pagan.mp3"></audio>
+	<audio id="la" src="la.mp3"></audio>
+	<audio id="mozart5" src="mozart5.mp3"></audio>
 
 	<a href="journal.html">
 			<div class="painting" id="twelve"></div>
@@ -311,9 +331,6 @@
 	<div class="painting" id="eighteen"></div>
 	<div class="painting" id="seventeen"></div>
 	<div class="painting" id="fifteen"></div>
-	<!-- <a href="https://docs.google.com/presentation/d/1WWB39p-K69ZOigbCODCCIadFyVxvI8PoTILJV6eveVs/edit?usp=sharing">
-	<div class="painting" id="seven"></div>
-</a> -->
 	<div id="bridge"></div>
 	<div id="flower"></div>
 	<div id="fan"></div>
@@ -325,7 +342,6 @@
 
 	
 
-
 <a href="uh.html">
 	<div class="square" id=painting3></div>
 </a>
@@ -335,7 +351,24 @@
 	<script type="text/javascript">
 
 	var one = document.getElementById("one");
-	// var carmina = document.getElementById('carmina');
+	var mozart = document.getElementById('mozart5');
+		var counter = 0
+
+		one.addEventListener('click',function (){ counter=counter +1
+
+
+			if (counter%2 !== 0) {
+
+			mozart.play()
+			console.log("played")}
+
+			else if (counter%2 == 0) {
+
+				mozart.pause();
+				console.log("pause")
+			}
+
+		})
 
 
 	one.addEventListener('mouseover',function (){
@@ -345,18 +378,29 @@
 
 	console.log(angle) 
 
-	// carmina.play();
-	// console.log("play?")
-
-	
 
 	} )
 
-	// one.addEventListener("mouseout", function(){
-	// 	carmina.pause(); 
-	// })
 
 	var two = document.getElementById("two");
+	var andante = document.getElementById('andante');
+		var counter = 0
+
+		two.addEventListener('click',function (){ counter=counter +1
+
+
+			if (counter%2 !== 0) {
+
+			andante.play()
+			console.log("played")}
+
+			else if (counter%2 == 0) {
+
+				andante.pause();
+				console.log("pause")
+			}
+
+		})
 
 	two.addEventListener('mouseover',function (){
 	var angle = Math.floor(Math.random()*100)
@@ -379,7 +423,7 @@
 	} )
 
 	var four = document.getElementById("four");
-
+	
 	four.addEventListener('mouseover',function (){
 	var angle = Math.floor(Math.random()*70)
 
@@ -389,6 +433,25 @@
 
 	} )
 	var five = document.getElementById("five");
+	var elf = document.getElementById('elf');
+		var counter = 0
+
+		five.addEventListener('click',function (){ counter=counter +1
+
+
+			if (counter%2 !== 0) {
+
+			elf.play()
+			console.log("played")}
+
+			else if (counter%2 == 0) {
+
+				elf.pause();
+				console.log("pause")
+			}
+
+		})
+
 
 	five.addEventListener('mouseover',function (){
 	var angle = Math.floor(Math.random()*98)
@@ -400,6 +463,25 @@
 	} )
 
 	var six = document.getElementById("six");
+	var chaconne = document.getElementById('chaconne');
+		var counter = 0
+
+		six.addEventListener('click',function (){ counter=counter +1
+
+
+			if (counter%2 !== 0) {
+
+			chaconne.play()
+			console.log("played")}
+
+			else if (counter%2 == 0) {
+
+				chaconne.pause();
+				console.log("pause")
+			}
+
+		})
+
 
 	six.addEventListener('mouseover',function (){
 	var angle = Math.floor(Math.random()*75)
@@ -412,6 +494,26 @@
 
 	var seven = document.getElementById("seven");
 
+	var lark = document.getElementById('lark');
+		var counter = 0
+
+		seven.addEventListener('click',function (){ counter=counter +1
+
+
+			if (counter%2 !== 0) {
+
+			lark.play()
+			console.log("played")}
+
+			else if (counter%2 == 0) {
+
+				lack.pause();
+				console.log("pause")
+			}
+
+		})
+
+
 	seven.addEventListener('mouseover',function (){
 	var angle = Math.floor(Math.random()*65)
 
@@ -423,6 +525,26 @@
 
 	var eight = document.getElementById("eight");
 
+	var hubay = document.getElementById('hubay');
+		var counter = 0
+
+		eight.addEventListener('click',function (){ counter=counter +1
+
+
+			if (counter%2 !== 0) {
+
+			hubay.play()
+			console.log("played")}
+
+			else if (counter%2 == 0) {
+
+				hubay.pause();
+				console.log("pause")
+			}
+
+		})
+
+
 	eight.addEventListener('mouseover',function (){
 	var angle = Math.floor(Math.random()*149)
 
@@ -431,6 +553,7 @@
 	console.log(angle) 
 
 	} )
+
 	var nine = document.getElementById("nine");
 
 	nine.addEventListener('mouseover',function (){
@@ -443,6 +566,25 @@
 	} )
 
 	var ten = document.getElementById("ten");
+	var wien = document.getElementById('wien');
+		var counter = 0
+
+		ten.addEventListener('click',function (){ counter=counter +1
+
+
+			if (counter%2 !== 0) {
+
+			wien.play()
+			console.log("played")}
+
+			else if (counter%2 == 0) {
+
+				wien.pause();
+				console.log("pause")
+			}
+
+		})
+
 
 	ten.addEventListener('mouseover',function (){
 	var angle = Math.floor(Math.random()*88)
@@ -454,6 +596,26 @@
 	} )
 
 	var eleven = document.getElementById("eleven");
+
+	var overture = document.getElementById('overture');
+		var counter = 0
+
+		eleven.addEventListener('click',function (){ counter=counter +1
+
+
+			if (counter%2 !== 0) {
+
+			overture.play()
+			console.log("played")}
+
+			else if (counter%2 == 0) {
+
+				overture.pause();
+				console.log("pause")
+			}
+
+		})
+
 
 	eleven.addEventListener('mouseover',function (){
 	var angle = Math.floor(Math.random()*103)
@@ -475,6 +637,26 @@
 
 	} )
 	var thirteen = document.getElementById("thirteen");
+
+	var introandrondo = document.getElementById('intoandrondo');
+		var counter = 0
+
+		thirteen.addEventListener('click',function (){ counter=counter +1
+
+
+			if (counter%2 !== 0) {
+
+			introandrondo.play()
+			console.log("played")}
+
+			else if (counter%2 == 0) {
+
+				introandrondo.pause();
+				console.log("pause")
+			}
+
+		})
+
 
 	thirteen.addEventListener('mouseover',function (){
 	var angle = Math.floor(Math.random()*90)
@@ -498,6 +680,26 @@
 
 	var fifteen = document.getElementById("fifteen");
 
+	var waltz = document.getElementById('waltz');
+		var counter = 0
+
+		fifteen.addEventListener('click',function (){ counter=counter +1
+
+
+			if (counter%2 !== 0) {
+
+			waltz.play()
+			console.log("played")}
+
+			else if (counter%2 == 0) {
+
+				waltz.pause();
+				console.log("pause")
+			}
+
+		})
+
+
 	fifteen.addEventListener('mouseover',function (){
 	var angle = Math.floor(Math.random()*154)
 
@@ -509,6 +711,25 @@
 
 	var sixteen = document.getElementById("sixteen");
 
+	var pagan = document.getElementById('pagan');
+		var counter = 0
+
+		sixteen.addEventListener('click',function (){ counter=counter +1
+
+
+			if (counter%2 !== 0) {
+
+			pagan.play()
+			console.log("played")}
+
+			else if (counter%2 == 0) {
+
+				pagan.pause();
+				console.log("pause")
+			}
+
+		})
+
 	sixteen.addEventListener('mouseover',function (){
 	var angle = Math.floor(Math.random()*92)
 
@@ -518,6 +739,26 @@
 
 	} )
 	var seventeen = document.getElementById("seventeen");
+
+	var masq = document.getElementById('masq');
+		var counter = 0
+
+		seventeen.addEventListener('click',function (){ counter=counter +1
+
+
+			if (counter%2 !== 0) {
+
+			masq.play()
+			console.log("played")}
+
+			else if (counter%2 == 0) {
+
+				masq.pause();
+				console.log("pause")
+			}
+
+		})
+
 
 	seventeen.addEventListener('mouseover',function (){
 	var angle = Math.floor(Math.random()*133)
@@ -529,6 +770,7 @@
 	} )
 
 	var eighteen = document.getElementById("eighteen");
+	
 
 	eighteen.addEventListener('mouseover',function (){
 	var angle = Math.floor(Math.random()*122)
@@ -541,6 +783,25 @@
 
 	var nineteen = document.getElementById("nineteen");
 
+	var panini5 = document.getElementById('panini5');
+		var counter = 0
+
+		nineteen.addEventListener('click',function (){ counter=counter +1
+
+
+			if (counter%2 !== 0) {
+
+			panini5.play()
+			console.log("played")}
+
+			else if (counter%2 == 0) {
+
+				panini5.pause();
+				console.log("pause")
+			}
+
+		})
+
 	nineteen.addEventListener('mouseover',function (){
 	var angle = Math.floor(Math.random()*102)
 
@@ -551,6 +812,26 @@
 	} )
 
 	var twenty = document.getElementById("twenty");
+
+	var polo = document.getElementById('polo');
+		var counter = 0
+
+		twenty.addEventListener('click',function (){ counter=counter +1
+
+
+			if (counter%2 !== 0) {
+
+			polo.play()
+			console.log("played")}
+
+			else if (counter%2 == 0) {
+
+				polo.pause();
+				console.log("pause")
+			}
+
+		})
+
 
 	twenty.addEventListener('mouseover',function (){
 	var angle = Math.floor(Math.random()*122)
@@ -563,6 +844,26 @@
 
 	var bridge = document.getElementById("bridge");
 
+	var bruch = document.getElementById('bruch');
+		var counter = 0
+
+		bridge.addEventListener('click',function (){ counter=counter +1
+
+
+			if (counter%2 !== 0) {
+
+			bruch.play()
+			console.log("played")}
+
+			else if (counter%2 == 0) {
+
+				bruch.pause();
+				console.log("pause")
+			}
+
+		})
+
+
 	bridge.addEventListener('mouseover',function (){
 	var angle = Math.floor(Math.random()*166)
 
@@ -573,6 +874,26 @@
 	} )
 
 	var flower = document.getElementById("flower");
+
+	var butterfly = document.getElementById('butterfly');
+		var counter = 0
+
+		flower.addEventListener('click',function (){ counter=counter +1
+
+
+			if (counter%2 !== 0) {
+
+			butterfly.play()
+			console.log("played")}
+
+			else if (counter%2 == 0) {
+
+				butterfly.pause();
+				console.log("pause")
+			}
+
+		})
+
 
 	flower.addEventListener('mouseover',function (){
 	var angle = Math.floor(Math.random()*154)
@@ -585,6 +906,25 @@
 
 	var fan = document.getElementById("fan");
 
+	var cindy = document.getElementById('cindy');
+		var counter = 0
+
+		fan.addEventListener('click',function (){ counter=counter +1
+
+
+			if (counter%2 !== 0) {
+
+			cindy.play()
+			console.log("played")}
+
+			else if (counter%2 == 0) {
+
+				cindy.pause();
+				console.log("pause")
+			}
+
+		})
+
 	fan.addEventListener('mouseover',function (){
 	var angle = Math.floor(Math.random()*192)
 
@@ -594,6 +934,25 @@
 
 	} )
 	var music = document.getElementById("music");
+
+	var shosta = document.getElementById('shosta');
+		var counter = 0
+
+		music.addEventListener('click',function (){ counter=counter +1
+
+
+			if (counter%2 !== 0) {
+
+			shosta.play()
+			console.log("played")}
+
+			else if (counter%2 == 0) {
+
+				shosta.pause();
+				console.log("pause")
+			}
+
+		})
 
 	music.addEventListener('mouseover',function (){
 	var angle = Math.floor(Math.random()*79)
@@ -606,6 +965,26 @@
 
 	var fur = document.getElementById("fur");
 
+	var ysaye = document.getElementById('ysaye');
+		var counter = 0
+
+		fur.addEventListener('click',function (){ counter=counter +1
+
+
+			if (counter%2 !== 0) {
+
+			ysaye.play()
+			console.log("played")}
+
+			else if (counter%2 == 0) {
+
+				ysaye.pause();
+				console.log("pause")
+			}
+
+		})
+
+
 	fur.addEventListener('mouseover',function (){
 	var angle = Math.floor(Math.random()*92)
 
@@ -617,10 +996,30 @@
 
 	var moreflowers = document.getElementById("moreflowers");
 
+	var dwm = document.getElementById('dwm');
+		var counter = 0
+
+		moreflowers.addEventListener('click',function (){ counter=counter +1
+
+
+			if (counter%2 !== 0) {
+
+			dwm.play()
+			console.log("played")}
+
+			else if (counter%2 == 0) {
+
+				dwm.pause();
+				console.log("pause")
+			}
+
+		})
+
+
 	moreflowers.addEventListener('mouseover',function (){
 	var angle = Math.floor(Math.random()*107)
 
-	moreflowers.style.transform ="rotate("+ angle + "deg)"
+	moreflowers.style.transform ="rotate("+ angle + "deg)";
 
 	console.log(angle) 
 

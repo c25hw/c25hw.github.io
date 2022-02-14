@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		#walking{
+			height: 200px;
+			width: 120px;
+			background-image: url(Human.gif);
+			top:-465px;
+			left: 240px;
+			background-size: cover;
+			/*background-color: blue;*/
+			z-index: 1;
+		}
+
+		#dogwalking{
+			height: 150px;
+			width: 200px;
+			background-image: url(Dogwalking.gif);
+			top:-600px;
+			left: 100px;
+			background-size: cover;
+		/*	background-color: blue;*/
+			z-index: 1;
+		}
+
+	</style>
+</head>
+<body>
+		<div id="walking"></div>
+		<div id="dogwalking"></div>
+
+		<script type="text/javascript">
+
+		var stick = document.getElementById("walking")
+		var dog =document.getElementById("dogwalking")
+
+		var left = 240;
+
+		var left1 = 100;
+
+		function anim(e){
+
+			 if(e.keyCode==76){
+
+			 	left+=10;
+
+			 	stick.style.left = left + 'px'
+
+			 	left+=10;
+			 	dog.style.left = left + 'px'
+			 	;
+			 }
+
+			 if(e.keyCode==82){
+
+			 	left -=10;
+
+			 	stick.style.left = left + 'px'
+			 	left-=10;
+			 	dog.style.left = left + 'px'
+			 	;
+			 }
+
+			 if(e.keyCode==38){
+			 }
+
+			 if(e.keyCode==40){
+			 }
+
+		}
+
+		document.onkeydown=anim;
+
+          	 function popup() {  
+  
+               alert ("Press L to walk fowards, R to go backwards"); 
+            }  
+
+		</script>
+</body>
+</html>
