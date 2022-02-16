@@ -13,14 +13,31 @@
 			z-index: -1;
 		}
 
+
+		#words{
+
+            position: relative;
+            left: 450px;
+            top: 400px;
+            font-size: xx-large;
+            font-weight: bold;
+            font-family: "Lucida Console", "Courier New", monospace;
+            /*background-color: blue;*/
+            z-index: 3;
+     
+
+		}
+
 		body{
 			margin: 0px;
 		}
+
 
 	</style>
 </head>
 <body>
 
+	<div id="words">Wow! Both you AND your dog are <br>invisible and floating because of these <br> ghosts. Legend says that they'll give you <br> something if you knock on their door</div>
 	<div id="tower"></div>
 
 	<script type="text/javascript">
@@ -49,7 +66,7 @@
 			alert ("Congratulations! You obtained NOTHING. Click OK to continue on your journey."); 
 
                var link = document.createElement('a');
-            link.href="Dog2.html";
+            link.href="Duocastle.html";
             link.innerText = "Obtain Nothing";
             tower.appendChild(link);
  
