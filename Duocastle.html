@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>MUSHROOM FOREST</title>
 
 	<style type="text/css">
 		
+		#forest{
+			position: relative;
+			height: 900px;
+			width: 2900px;
+			top: -70px;
+			background-image: url(cloudshrooms.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			z-index: -1;
+
+		}
+
 		#walking{
+			position: relative;
 			height: 200px;
 			width: 120px;
 			background-image: url(Human.gif);
-			top:-465px;
+			top:-425px;
 			left: 240px;
 			background-size: cover;
 			/*background-color: blue;*/
@@ -17,24 +30,75 @@
 		}
 
 		#dogwalking{
+			position: relative;
 			height: 150px;
 			width: 200px;
 			background-image: url(Dogwalking.gif);
-			top:-600px;
+			top:-563px;
 			left: 100px;
 			background-size: cover;
 		/*	background-color: blue;*/
 			z-index: 1;
 		}
 
+		 #words{
+            position: relative;
+            left: 530px;
+            top: 200px;
+            font-size: xx-large;
+            font-weight: bold;
+            font-family: "Lucida Console", "Courier New", monospace;
+            /*background-color: blue;
+           /* z-index: 3;
+         }
+*/
+        /* #button{
+            position: relative;
+            left: 680px;
+            top: 300px;
+            z-index: 3;
+            */
+         }
+
+
+		 #wordss{
+            position: relative;
+            left: 900px;
+            top: 400px;
+            font-size: xx-large;
+            font-weight: bold;
+            font-family: "Lucida Console", "Courier New", monospace;
+         
+         }
+
+		body{
+			margin: 0px;
+		}
+
 	</style>
 </head>
 <body>
-		<div id="walking"></div>
-		<div id="dogwalking"></div>
+	   <div id="words"> You appear in a weird landscape. Fun!</div>  
 
-		<script type="text/javascript">
+	   <div id="wordss"> You see a weird alien guy in a booth. <br>You think its a great idea to<br> talk to him</div>  
 
+<!--       <button id=button>Click Me</button> -->
+<!-- 
+         <div id="button">
+      <form>  
+         <input type = "button" value = "Click me" onclick = "popup();" /> 
+      </form> 
+         </div> -->
+
+      <div id="a"></div>
+	<div id="forest"></div>
+	<div id="walking"></div>
+	<div id="dogwalking"></div>
+
+ 
+	<script type="text/javascript">
+
+			
 		var stick = document.getElementById("walking")
 		var dog =document.getElementById("dogwalking")
 
@@ -60,6 +124,7 @@
 			 	left -=10;
 
 			 	stick.style.left = left + 'px'
+
 			 	left-=10;
 			 	dog.style.left = left + 'px'
 			 	;
@@ -75,11 +140,17 @@
 
 		document.onkeydown=anim;
 
-          	 function popup() {  
+
+
+
+            function popup() {  
+  
   
                alert ("Press L to walk fowards, R to go backwards"); 
+
             }  
 
 		</script>
+]
 </body>
 </html>
