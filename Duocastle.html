@@ -6,38 +6,47 @@
 	<style type="text/css">
 		
 		#forest{
-			position: relative;
+			position: absolute;
 			height: 900px;
 			width: 2900px;
 			top: -70px;
 			background-image: url(cloudshrooms.png);
-			background-size: cover;
+			background-size: contain;
 			background-repeat: no-repeat;
-			z-index: -1;
+			z-index: -5;
 
 		}
 
-		#walking{
+		   #alien{
 			position: relative;
+			top: -1000px;
+			left: 2400px;
+			height: 500px;
+			width: 500px;
+			background-color: blue;
+			z-index: 1;
+			opacity: 0;
+		}
+
+		#walking{
+			position: absolute;
 			height: 200px;
 			width: 120px;
 			background-image: url(Human.gif);
-			top:-425px;
+			top:400px;
 			left: 240px;
 			background-size: cover;
-			/*background-color: blue;*/
 			z-index: 1;
 		}
 
 		#dogwalking{
-			position: relative;
+			position: absolute;
 			height: 150px;
 			width: 200px;
 			background-image: url(Dogwalking.gif);
-			top:-563px;
+			top:520px;
 			left: 100px;
 			background-size: cover;
-		/*	background-color: blue;*/
 			z-index: 1;
 		}
 
@@ -48,16 +57,6 @@
             font-size: xx-large;
             font-weight: bold;
             font-family: "Lucida Console", "Courier New", monospace;
-            /*background-color: blue;
-           /* z-index: 3;
-         }
-*/
-        /* #button{
-            position: relative;
-            left: 680px;
-            top: 300px;
-            z-index: 3;
-            */
          }
 
 
@@ -73,7 +72,11 @@
 
 		body{
 			margin: 0px;
+			width:2500px;
+		background-color: rgb(165, 245, 243);
 		}
+
+
 
 	</style>
 </head>
@@ -82,19 +85,12 @@
 
 	   <div id="wordss"> You see a weird alien guy in a booth. <br>You think its a great idea to<br> talk to him</div>  
 
-<!--       <button id=button>Click Me</button> -->
-<!-- 
-         <div id="button">
-      <form>  
-         <input type = "button" value = "Click me" onclick = "popup();" /> 
-      </form> 
-         </div> -->
 
       <div id="a"></div>
 	<div id="forest"></div>
 	<div id="walking"></div>
 	<div id="dogwalking"></div>
-
+	<div id="alien"></div>
  
 	<script type="text/javascript">
 
@@ -149,6 +145,22 @@
                alert ("Press L to walk fowards, R to go backwards"); 
 
             }  
+
+ 		var alien = document.getElementById("alien");
+
+ 		var background = document.getElementById("forest")
+
+
+ 		alien.addEventListener("click", function(){
+
+ 			background.style.backgroundImage = "url()";
+ 		background.style.backgroundColor = "grey";
+
+ 		wordss.innerText = ""; 
+ 		words.innerText = "";   
+ 		
+ 		}
+ 			)
 
 		</script>
 ]
