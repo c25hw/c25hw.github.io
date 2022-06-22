@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>library of classics</title>
+
+	<style type="text/css">
+
+		.spines{
+			height: 250px;
+			width:200px;
+			/*position:relative;*/
+			display:inline-block;
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+			z-index: 3;
+			top:320px;
+		}
+		#wallpaper{
+			height: 800px;
+			width: 1450px;
+			/*top: -1000px;*/
+			background-image: url(wall.jpeg);
+			position: fixed;
+			background-size: cover;
+			z-index: -1; 
+			top:0px;
+		}
+
+		#shelf{
+			height: 700px;
+			width: 1100px;
+			/*top: -1000px;*/
+			background-image: url(self.png);
+			position: fixed;
+			background-size: cover;
+			z-index: 3; 
+			top:100px;
+		}
+
+		#pride{
+			background-image: url(ppspine.png);
+			left: 100px;
+		}
+
+		#war{
+			background-image: url(war.png);
+			left: 145px;
+		}
+
+		#anna{
+
+			background-image: url(anna1.png);
+			left: 117px;
+			height: 600px;
+			width: 260px;
+			top: 310px;
+		}
+
+		body{
+			margin: 0;
+		}
+		
+	</style>
+
+</head>
+<body>
+
+<div id="wallpaper"></div>
+<div id="shelf"></div>
+<div class= "spines" id="pride"></div>
+<div class= "spines" id="war"></div>
+<div class= "spines" id="anna"></div>
+
+<script type="text/javascript">
+	
+	var pride = document.getElementById("pride");
+
+
+</script>
+
+</body>
+</html>
